@@ -43,4 +43,14 @@ $(document).ready(function(){
         $("#box h3").clone().prependTo("#box2-h3")
 
     });
+
+    //wrap and unwrap
+    $("#wrap").click(function(){
+        $("#box2").wrap("<h2></h2>")
+
+    });
+    $("#unwrap").click(function(){
+        $("#box2").unwrap()
+
+    });
 });
