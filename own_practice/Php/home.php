@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-   echo "My first PHP script!";
+   echo "<h1>My first PHP script!</h1>";
    ?>
 </body>
 </html>
