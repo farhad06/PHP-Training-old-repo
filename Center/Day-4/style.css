@@ -1,9 +1,9 @@
- body{
+    body{
             margin: 5px;
             padding: 5px;
             background-color: lightblue;
         }
-       #div1 p{
+    #div1 p{
             float: left;
             margin: 15px;
             font-size: 28px;
@@ -35,4 +35,11 @@
             margin: 8px;
             padding: 5px;
             /* border: 2px solid gray; */
+        }
+
+        @media only screen and (max-width:768px) {
+            body{
+                background-color: brown;
+            }
+            
         }
