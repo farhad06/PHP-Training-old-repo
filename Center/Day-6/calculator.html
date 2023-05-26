@@ -16,7 +16,7 @@
                 <input type="number" name="" id="n1">
             </td>
         </tr>
-            <tr>
+        <tr>
             <td>Number-2: </td>
             <td>
                 <input type="number" name="" id="n2">
@@ -25,10 +25,11 @@
         <tr>
             <td>Calculate: </td>
             <td>
-            <button id="add" onclick="add()">+</button>
-            <button id="sub" onclick="sub()">-</button>
-            <button id="multi" onclick="multi()">*</button>
-            <button id="divi" onclick="divi()">/</button>
+            <button id="add" onclick="add()" class="btn">+</button>
+            <button id="sub" onclick="sub()" class="btn">-</button>
+            <button id="multi" onclick="multi()" class="btn">*</button>
+            <button id="divi" onclick="divi()" class="btn">/</button>
+            <button id="mod" onclick="mod()" class="btn">%</button>
             </td>
            
         </tr>
@@ -70,6 +71,15 @@
             var a =Number(document.getElementById('n1').value);
             var b =Number(document.getElementById('n2').value);
             var c=a/b;
+            console.log(c)
+            document.getElementById('res').innerHTML=c;
+
+        }
+        //modulation function
+        function mod(){
+            var a =Number(document.getElementById('n1').value);
+            var b =Number(document.getElementById('n2').value);
+            var c=a%b;
             console.log(c)
             document.getElementById('res').innerHTML=c;
 
