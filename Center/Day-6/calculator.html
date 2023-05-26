@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <center>Basic Calculator</center>
+    <table style="margin-left: auto; margin-right: auto;">
+        <!-- <caption style="text-align: center;">Basic Calculator</caption> -->
+        <tr>
+            <td>Number-1: </td>
+            <td>
+                <input type="number" name="" id="n1">
+            </td>
+        </tr>
+            <tr>
+            <td>Number-2: </td>
+            <td>
+                <input type="number" name="" id="n2">
+            </td>
+        </tr>
+        <tr>
+            <td>Calculate: </td>
+            <td>
+            <button id="add" onclick="add()">+</button>
+            <button id="sub" onclick="sub()">-</button>
+            <button id="multi" onclick="multi()">*</button>
+            <button id="divi" onclick="divi()">/</button>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>Result: </td>
+            <td><span id="res"></span></td>
+        </tr>
+    </table>
+    <script>
+        //addtion function
+        function add(){
+            var a =Number(document.getElementById('n1').value);
+            var b =Number(document.getElementById('n2').value);
+            var c=a+b;
+            console.log(c)
+            document.getElementById('res').innerHTML=c;
+
+        }
+        //substraction function
+        function sub(){
+            var a =Number(document.getElementById('n1').value);
+            var b =Number(document.getElementById('n2').value);
+            var c=a-b;
+            console.log(c)
+            document.getElementById('res').innerHTML=c;
+
+        }
+        //multiplication function
+        function multi(){
+            var a =Number(document.getElementById('n1').value);
+            var b =Number(document.getElementById('n2').value);
+            var c=a*b;
+            console.log(c)
+            document.getElementById('res').innerHTML=c;
+
+        }
+        //division function
+        function divi(){
+            var a =Number(document.getElementById('n1').value);
+            var b =Number(document.getElementById('n2').value);
+            var c=a/b;
+            console.log(c)
+            document.getElementById('res').innerHTML=c;
+
+        }
+    </script>
+</body>
+</html>
