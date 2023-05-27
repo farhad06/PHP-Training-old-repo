@@ -5,12 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <!-- add google fonts -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-size: 25px;
+        }
+        .calculator{
+                padding: 10px;
+                border-radius: 1em;
+                height: 380px;
+                width: 400px;
+                margin: auto;
+                margin-top: 60px;
+                font-size: 25px;
+                background-color: #a22ac7;
+
+        }
+        .display-box{
+                font-family:monospace;
+                background-color: #dcdbe1;
+                border:solid black 0.5px;
+                color:black;
+                border-radius: 5px;
+                width:298px;
+                height:45px;
+        }
+        #btn{
+                background-color:#fb0066 ;
+        }
+
+
+        input[type=button]{
+                background-color: #2e00fb;
+                color: white;
+                border:solid black 0.5px;
+                width:85px;
+                height:45px;
+                border-radius:5px;
+                outline: none;
+        }
+        input[type=button]:hover{
+                background-color: #e59866;
+        }
+        input[type=value]{
+            font-size: 25px;
+                
+        }
+    </style>
 </head>
 <body>
     <table class="calculator">
+        <tr><td><span style="font-size:15px; color: white;">CASIO-MS</span></td>
+            <!-- <td><span style="font-size:15px; color: white; margin-left: 35px;">12-DIGIT</span></td> -->
+        </tr>
         <tr>
             <td colspan="3"> <input class="display-box" type="text" id="result" disabled /></td>
             <td><input type="button" id="btn" value="C" onclick="clearScreen()"></td>
@@ -38,10 +84,27 @@
              <td><input type="button" value="." onclick="display('.')"></td>
             <td><input type="button" value="0" onclick="display('0')"></td>
             <td><input type="button" value="=" onclick="calculate()" id="btn"></td>
-            <td><input type="button" value="x" onclick="display('x')"></td>
+            <td><input type="button" value="*" onclick="display('*')"></td>
         </tr>
 
 
     </table>
+    <script>
+        //this function display values
+        function display(value){
+            document.getElementById('result').value+=value;
+        }
+        //this function clear the output screen
+        function clearScreen(){
+            document.getElementById('result').value="";
+        }
+
+        //this function calculate the operations
+        function calculate(){
+            var a=document.getElementById('result').value;
+            var b=eval(a)
+            document.getElementById('result').value=b;
+        }
+    </script>
 </body>
 </html>
