@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<style>
+    #errorMsg{
+        color: red;
+    }
+</style>
+<body>
+    <h2>Age Validation</h2>
+    <div>
+        <form action="">
+            <label for="">Age:</label>
+            <input type="text" id="age" onkeyup="ageValidation()" required autocomplete="off">
+            <span id="errorMsg"></span><br><br> 
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </div>
+    <script>
+        function ageValidation(){
+            var age=parseInt(document.getElementById('age').value);
+            if(age>=18 && age<=45){
+                document.getElementById('errorMsg').innerHTML="";
+                document.getElementById('btn').disabled=false;
+
+            }else{
+                document.getElementById('errorMsg').innerHTML="Age must be 18 to 45.";
+                document.getElementById('btn').disabled=true;
+            }
+        }
+    </script>
+</body>
+</html>
