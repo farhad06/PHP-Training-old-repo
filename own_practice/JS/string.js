@@ -50,4 +50,4 @@ console.log(replace_all_result);
 //trim()
 //toLower()
 //toUpper()
-//substring()
+//substring()==?Cateate nnns
