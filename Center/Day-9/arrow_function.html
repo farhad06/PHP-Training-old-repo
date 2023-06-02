@@ -49,7 +49,20 @@
         var mod=(a,b)=>{
             document.getElementById('res').innerHTML=`Modulus is: ${a%b}`;
         };
+        
+        let arr=[11,33,44,55,66]
+        // document.writeln("Array Elements are:")
+        console.log("Array Elements are:")
+        for(let i=0;i<arr.length;i++){
+            // document.write(arr[i])
+            console.log(arr[i])
 
+        }
+
+        const courses=[{'c_id':1,'c_name':'PHP','c_fees':9000},{'c_id':2,'c_name':'React','c_fees':20000}]
+        for(let c of courses){
+            console.log(c.c_id+" "+c.c_name+" "+c.c_fees);
+        }
 
     </script>
 </body>
