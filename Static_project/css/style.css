@@ -65,15 +65,6 @@ a:hover{
     color:white;
     background: rgba(231, 76, 60,0.7);
 }
-.service-box{
-    text-align: center;
-    
-}
-.service-box i.fa{
-    color: #e74c3c;
-    font-size: 70px;
-    margin-bottom: 15px;
-}
 #termonials{
     color: white;
     background: url(../images/butterfly.jpg) no-repeat 0 0;
