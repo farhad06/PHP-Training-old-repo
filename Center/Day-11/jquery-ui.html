@@ -8,26 +8,26 @@
     <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+        #s{
+            margin-left: 1131px;
+        }
+    </style>
 </head>
 <body>
     <center>
         <h1><i>This is jQuery UI</i></h1>
     </center>
-    <!-- <div id="d1">
-            <section>
-            <h2>Heading-1</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga numquam officiis repellendus, ad vero molestiae nobis quas. At ipsum nemo voluptatum repellat laboriosam tempore eos sequi tenetur esse doloremque accusantium iure veritatis praesentium aperiam nisi saepe, sit sunt iusto cupiditate asperiores vero maxime. Sequi illum ratione accusamus autem facilis?
-            </section>
-            <section>
-            <h2>Heading-2</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga numquam officiis repellendus, ad vero molestiae nobis quas. At ipsum nemo voluptatum repellat laboriosam tempore eos sequi tenetur esse doloremque accusantium iure veritatis praesentium aperiam nisi saepe, sit sunt iusto cupiditate asperiores vero maxime. Sequi illum ratione accusamus autem facilis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae tenetur ex sapiente error vel, architecto fugit aliquam repellendus ullam rerum tempore veniam accusamus eius pariatur explicabo hic repellat quidem similique quia asperiores omnis odio quaerat minima! Ea molestias alias voluptates error incidunt, vitae eveniet provident itaque quia! Dolorum, architecto!
-            </section>
-            <section>
-            <h2>Heading-3</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga numquam officiis repellendus, ad vero molestiae nobis quas. At ipsum nemo voluptatum repellat laboriosam tempore eos sequi tenetur esse doloremque accusantium iure veritatis praesentium aperiam nisi saepe, sit sunt iusto cupiditate asperiores vero maxime. Sequi illum ratione accusamus autem facilis?
-            </section>
-        </div> -->
+    <div>
+        <div id="s">
+            <label for="">Search:</label>
+            <input type="text" id="s1" name="s1">
+        </div>
+    </div>
+    <hr>
+    
+        <center><h3>Tabs</h3></center>
+        <hr>
         <div id="d2">
                     <ul>
                         <li><a href="#tab1">Lorem-1</a></li>
@@ -77,6 +77,24 @@
                     </section>
 
         </div>
+        <hr>
+        <center><h3>Accordian</h3></center>
+        <hr>
+        <div id="d1">
+                    <section>
+                    <h2>Heading-1</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga numquam officiis repellendus, ad vero molestiae nobis quas. At ipsum nemo voluptatum repellat laboriosam tempore eos sequi tenetur esse doloremque accusantium iure veritatis praesentium aperiam nisi saepe, sit sunt iusto cupiditate asperiores vero maxime. Sequi illum ratione accusamus autem facilis?
+                    </section>
+                    <section>
+                    <h2>Heading-2</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga numquam officiis repellendus, ad vero molestiae nobis quas. At ipsum nemo voluptatum repellat laboriosam tempore eos sequi tenetur esse doloremque accusantium iure veritatis praesentium aperiam nisi saepe, sit sunt iusto cupiditate asperiores vero maxime. Sequi illum ratione accusamus autem facilis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae tenetur ex sapiente error vel, architecto fugit aliquam repellendus ullam rerum tempore veniam accusamus eius pariatur explicabo hic repellat quidem similique quia asperiores omnis odio quaerat minima! Ea molestias alias voluptates error incidunt, vitae eveniet provident itaque quia! Dolorum, architecto!
+                    </section>
+                    <section>
+                    <h2>Heading-3</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga numquam officiis repellendus, ad vero molestiae nobis quas. At ipsum nemo voluptatum repellat laboriosam tempore eos sequi tenetur esse doloremque accusantium iure veritatis praesentium aperiam nisi saepe, sit sunt iusto cupiditate asperiores vero maxime. Sequi illum ratione accusamus autem facilis?
+                    </section>
+                </div>
     <script>
         $(document).ready(function () {
             console.log("jQuery Loaded");
@@ -84,6 +102,10 @@
             $('#d1').accordion();
             //tabs
             $("#d2").tabs();
+              var city = ['Delhi','Kolkata','Surat','Bengalore','Hyderabad','Chennai','Bhupal','Ahamedabad','Mumbai'];
+            $('#s1').autocomplete({
+                source: city
+            });
 
         });
     </script>
