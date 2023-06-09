@@ -155,3 +155,7 @@ function addressValidation(){
         document.getElementById('addressErr').classList.remove('error-msg');
     }
 }
+
+$(document).ready(function(){
+    $("#inputform").validate();
+})
