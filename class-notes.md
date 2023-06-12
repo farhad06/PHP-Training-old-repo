@@ -6,3 +6,6 @@ https://www.w3schools.in/html/web-forms
 
 ## Array Functions
 https://www.php.net/manual/en/function.array-combine.php
+
+## Some CSS Style
+https://www.w3schools.com/howto/howto_css_contact_form.asp
