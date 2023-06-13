@@ -21,10 +21,10 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#2ecc71;">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Add</a>
-        <a class="nav-item nav-link" href="#">Update</a>
-        <a class="nav-item nav-link" href="#">Delete</a>
+        <a class="nav-item nav-link" href="index.php">HOME</a>
+        <a class="nav-item nav-link" href="add.php">ADD</a>
+        <a class="nav-item nav-link" href="update.php">UPDATE</a>
+        <a class="nav-item nav-link" href="delete.php">DELETE</a>
 
         </div>
         </div>

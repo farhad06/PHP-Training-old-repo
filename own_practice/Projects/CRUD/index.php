@@ -1,6 +1,6 @@
 <?php include ('header.php'); ?>
         <div id="main-contain" style="margin-top:3px;">
-        <h2>All Records</h2>
+        <h2 style="text-align:center">All Records</h2>
             <table class="table table-bordered">
                 <thead>
                     <tr>
