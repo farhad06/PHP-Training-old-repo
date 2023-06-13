@@ -2,7 +2,11 @@
     text-align: center;
     margin-top: 33px;
     background-color: aqua;
+    height: 70px;
 }
+/* #main-contain{
+    background-color: darkgray;
+} */
 
 button a{
     color: azure;

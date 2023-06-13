@@ -1,6 +1,6 @@
 <?php include ('header.php'); ?>
     <div id="main-contain" style="margin-top:3px;">
-        <h2 style="text-align:center">Add New Records</h2>
+        <h3 style="text-align:center">Add New Records</h3>
           <div class="col-md-6 offset-md-3" id="addForm">
                 <form action="">
                       <div class="form-group row">

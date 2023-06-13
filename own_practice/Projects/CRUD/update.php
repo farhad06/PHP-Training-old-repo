@@ -1,6 +1,6 @@
 <?php include ('header.php'); ?>
         <div id="main-contain" style="margin-top:3px;">
-        <h2 style="text-align:center">Update Records</h2>
+        <h3 style="text-align:center">Update Records</h3>
         <div class="col-md-6 offset-md-3" id="addForm">
                 <form action="">
                     <div class="form-group row">
@@ -11,7 +11,7 @@
                       </div>
                        <div class="form-group row">
                             <div class="col-sm-12"  >
-                                <button class="btn btn-primary" name='show' id='btn'>SHOW</button>
+                                <button class="btn btn-warning" name='show' id='btn'>SHOW</button>
                             </div>
                       </div>
                       <div class="form-group row">
@@ -45,7 +45,7 @@
                       </div>
                        <div class="form-group row">
                             <div class="col-sm-12"  >
-                                <button class="btn btn-primary" name='add' id='btn'>UPDATE</button>
+                                <button class="btn btn-success" name='update' id='btn'>UPDATE</button>
                             </div>
                       </div>
                 </form>
