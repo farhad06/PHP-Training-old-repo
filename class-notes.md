@@ -13,3 +13,7 @@ https://www.w3schools.com/howto/howto_css_contact_form.asp
 
 #### PHP programs
 https://t4tutorials.com/program-to-add-two-numbers-in-php-and-show-their-sum-with-form-and-with-database/
+
+#### VS code font style 
+https://www.youtube.com/watch?v=n9sklnvelhg
+
