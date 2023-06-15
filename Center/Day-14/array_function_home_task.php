@@ -1,4 +1,6 @@
-<?php 
+<?php
+echo"<center><h1>All Array Inbuild functions</h1></center>";
+echo"<hr><hr>"; 
 //array_keys()
 echo"<center><h2>Keys</h2> </center> <br>";
 
@@ -48,6 +50,21 @@ $color2=['c4'=>'blue','c5'=>'pink','c6'=>'red'];
 $diff=array_diff($color1,$color2);
 print('<pre>');
 print_r($diff);
+echo"<hr>";
+//implode
+echo"<center><h2>Implode</h2> </center> <br>";
+$str=['I' ,'love', 'Cricket'];
+$implode_arr=implode(' ',$str);
+print('<pre>');
+print_r($implode_arr);
+echo"<hr>";
+//explode
+echo"<center><h2>Explode</h2> </center> <br>";
+// $str=['I' ,'love', 'Cricket'];
+$str='I Love Cricket';
+$explode_arr=explode(' ',$str);
+print('<pre>');
+print_r($explode_arr);
 echo"<hr>";
 
 
