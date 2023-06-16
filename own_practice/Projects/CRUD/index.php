@@ -32,7 +32,7 @@
                         <td><?php  echo $row['sphone'] ?></td>
                         <td>
                               <button class="btn btn-sm btn-info"><a href='#'>Edit</a></button>
-                              <button class="btn btn-sm btn-danger"><a href='#'>Delete</a></button>
+                              <button class="btn btn-sm btn-danger"><a href='delete_records.php?id=<?php echo $row['sid'] ?>'>Delete</a></button>
                         </td>
                         
                     </tr>
