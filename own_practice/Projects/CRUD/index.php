@@ -1,57 +1,46 @@
 <?php include ('header.php'); ?>
         <div id="main-contain" style="margin-top:3px;">
         <h3 style="text-align:center">All Records</h3>
+        <?php $conn=mysqli_connect('localhost','root','','crud') or die('Connection Failed.');
+        
+        $sql="SELECT * FROM student JOIN studentclass WHERE student.sclass=studentclass.cid";
+        //$sql='SELECT * FROM student';
+        $result=mysqli_query($conn,$sql) or die('Connection Unsuccessful.');
+        if(mysqli_num_rows($result)>0){
+        
+        ?>
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Class</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Action</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Class</th>
+                        <th>Phone</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <?php 
+                    while($row=mysqli_fetch_assoc($result)){
+                    ?>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <td><?php echo $row['sid'] ?></td>
+                        <td><?php echo $row['sname'] ?></td>
+                        <td><?php echo $row['saddress'] ?></td>
+                        <td><?php  echo $row['cname'] ?></td>
+                        <td><?php  echo $row['sphone'] ?></td>
                         <td>
                               <button class="btn btn-sm btn-info"><a href='#'>Edit</a></button>
                               <button class="btn btn-sm btn-danger"><a href='#'>Delete</a></button>
                         </td>
                         
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@mdo</td>
-                        <td>
-                            <button class="btn btn-sm btn-info"><a href='#'>Edit</a></button>
-                            <button class="btn btn-sm btn-danger"><a href='#'>Delete</a></button>
-                        </td>
-                        <!-- <td>@mdo</td> -->
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry the Bird</td>
-                        <td>Tweeter</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
-                        <td>
-                           <button class="btn btn-sm btn-info"><a href='#'>Edit</a></button>
-                           <button class="btn btn-sm btn-danger"><a href='#'>Delete</a></button>
-                        </td>
-                        <!-- <td>@mdo</td> -->
-                    </tr>
+                    <?php }?>
                     
                 </tbody>
                 </table>
+                <?php }?>
         </div>
 </div>
 </body>
