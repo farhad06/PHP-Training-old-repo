@@ -1,5 +1,5 @@
 <?php
-############################### OPen and Read File ##########################
+############################### Open and Read File ##########################
  
 //open a file
 $handelars=fopen('abc.txt','r');
