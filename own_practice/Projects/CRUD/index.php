@@ -31,8 +31,8 @@
                         <td><?php  echo $row['cname'] ?></td>
                         <td><?php  echo $row['sphone'] ?></td>
                         <td>
-                              <button class="btn btn-sm btn-info"><a href='#'>Edit</a></button>
-                              <button class="btn btn-sm btn-danger"><a href='delete_records.php?id=<?php echo $row['sid'] ?>'>Delete</a></button>
+                              <a class="btn btn-sm btn-info" href='edit.php?id=<?php echo $row['sid'] ?>'>Edit</a>
+                              <a class="btn btn-sm btn-danger" href='delete_records.php?id=<?php echo $row['sid'] ?>'>Delete</a>
                         </td>
                         
                     </tr>
