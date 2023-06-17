@@ -11,11 +11,11 @@ $fileSize=$_FILES['image']['size'];
 
 if($fileType=='image/png' || $fileType=='image/jpg'||$fileType=='image/jpeg'||$fileType=='image/gif' ){
 move_uploaded_file($fileTemp,'Images/'.$fileName);
-echo "Image Uploaded";
+echo "<script>alert('Image Uploaded')</script>";
 }else{
-    echo "File Type Not Supported";
+    echo "<script>alert('File Type Not Supported')</script>";
 }
-
+//header('Location:http://127.0.0.1/php_tranning/own_practice/Php/File-Upload/index.html')
 
 
 

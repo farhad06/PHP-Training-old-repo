@@ -29,8 +29,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="">Image</label>
-                        <input type="file" name="image" required class="form-control" onchange="img_prev()">
-                        <img src="" id="img_prev">
+                        <input type="file" name="image" required class="form-control" onchange="preview()">
+                        <img src="" id="img_prev" style="width: 110px; height: 85px; margin-top: 10px;">
                     </div>
                 </div>
         </div>
@@ -45,6 +45,16 @@
     </div>
     <script>
         var image1=document.getElementById('img_prev');
+        function preview(){
+            var imagePath=URL.createObjectURL(event.target.files[0]);
+            //console.log(imagePath);
+            image1.src=imagePath;
+            image1.style.display = 'block';
+
+        }
+        addEventListener('load',function(){
+            image1.style.display='none';
+        });
 
     </script>
 </body>
