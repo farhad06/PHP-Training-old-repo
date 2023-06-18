@@ -1,4 +1,4 @@
-# PHP-Training
+<center> # PHP-Training </center>
 
 ## PHP Training Tasks
 
