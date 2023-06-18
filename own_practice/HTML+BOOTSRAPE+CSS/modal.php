@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-top: 12PX;">
-            Launch demo modal
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" style="margin-top: 12PX;">
+            Add New Records
         </button>
         
         <!-- Modal -->
@@ -26,21 +26,23 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group">
-                            <label for="">Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-sm btn-primary">Sumbit</button>
-                        </div>
+                        <form action="show.php" method="post">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-sm btn-primary">Sumbit</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>
                 </div>
             </div>
