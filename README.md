@@ -4,7 +4,7 @@
 
 This repository contains the tasks and assignments completed during my PHP training at ejob India. Each task is designed to enhance my PHP programming skills and covers various concepts and techniques.
 
-## Task Completed
+## Covered Topics
 - Basic HTML.
 - Basic CSS.
 - Bootstrap.
