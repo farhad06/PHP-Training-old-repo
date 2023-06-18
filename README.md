@@ -1,10 +1,18 @@
 # PHP-Training
 
-### PHP Training Tasks
+## PHP Training Tasks
 
 This repository contains the tasks and assignments completed during my PHP training at ejob India. Each task is designed to enhance my PHP programming skills and covers various concepts and techniques.
 
-### Task List
+## Task Completed
+- Basic HTML.
+- Basic CSS.
+- Bootstrap.
+- Design some Static Web pages Using (HTML, CSS, and Bootstrap).
+- Javascript.
+- jQuery.
+- jquery-UI.
+- PHP Running.....
 
 
 ## Getting Started
