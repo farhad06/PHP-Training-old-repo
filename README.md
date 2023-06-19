@@ -35,10 +35,6 @@ To get started with the tasks, follow the instructions below:
 
 Each task directory follows a similar structure:
 
-- `README.md`: Provides instructions and explanations for the task.
-- `src/`: Contains the PHP source code files.
-- `test/`: Contains test cases (if applicable) to verify the correctness of the code.
-- `docs/`: Additional documentation or resources related to the task (if applicable).
 
 ### Contributions
 
