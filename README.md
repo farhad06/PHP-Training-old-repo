@@ -11,7 +11,7 @@ This repository contains the tasks and assignments completed during my PHP train
 - Design some Static Web pages Using (HTML, CSS, and Bootstrap).
 - Javascript.
 - jQuery.
-- jquery-UI.
+- jQuery-UI.
 - PHP Running.....
 
 
@@ -48,5 +48,5 @@ This repository is licensed under the [MIT License](LICENSE). You are free to us
 
 If you have any questions or need further assistance, please feel free to reach out to me at [farhadahamed06@gmail.com](mailto:farhadahamed06@gmail.com). 
 
-##### Follow me on <a href="https://www.linkedin.com/in/farhadahamed/">Linkedin</a>
+##### Follow me on <a href="https://www.linkedin.com/in/farhadahamed/">LinkedIn</a>
 

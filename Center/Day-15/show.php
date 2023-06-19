@@ -27,8 +27,8 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Phone</th>
                     <th>Email</th>
+                    <th>Phone</th>
                     <th>Age</th>
                     <th>Gender</th>
                     <th>City</th>
