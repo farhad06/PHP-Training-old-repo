@@ -26,12 +26,12 @@
                 if ($imageSize <= 500000) {
                     move_uploaded_file($imageTemp, 'assects/' . $imageName);
                     //echo"<script>alert('Image Uploaded');</script>";
-                    echo "<h4 class='alert alert-primary' role=alert'>Image Uploaded Successfully!</h4>";
+                    echo "<h4 class='alert alert-primary' role='alert'>Image Uploaded Successfully!</h4>";
                 } else {
-                    echo "<h4 class='alert alert-danger' role=alert'>Upload Image Under 500KB!</h4>";
+                    echo "<h4 class='alert alert-danger' role='alert'>Upload Image Under 500KB!</h4>";
                 }
             } else {
-                echo "<h4 class='alert alert-danger' role=alert'>Only JPEG/JPG/PNG/GIF Images Supported!</h4>";
+                echo "<h4 class='alert alert-danger' role='alert'>Only JPEG/JPG/PNG/GIF Images Supported!</h4>";
             }
         }
 
@@ -46,12 +46,12 @@
             if ($pdfType == 'application/pdf') {
                 if ($pdfSize <= 1000000) {
                     move_uploaded_file($pdfTemp, 'assects/' . $pdfName);
-                    echo "<h4 class='alert alert-primary' role=alert'>PDF Uploaded Successfully!</h4>";
+                    echo "<h4 class='alert alert-primary' role='alert'>PDF Uploaded Successfully!</h4>";
                 } else {
-                    echo "<h4 class='alert alert-danger' role=alert'>PDF Should be 1MB!</h4>";
+                    echo "<h4 class='alert alert-danger' role='alert'>PDF Should be 1MB!</h4>";
                 }
             } else {
-                echo "<h4 class='alert alert-danger' role=alert'>Uploaded file should be (.pdf) extension.</h4>";
+                echo "<h4 class='alert alert-danger' role='alert'>Uploaded file should be (.pdf) extension.</h4>";
             }
         }
         //code fro upload word file
@@ -65,12 +65,12 @@
             if ($wordType == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
                 if ($wordSize <= 1000000) {
                     move_uploaded_file($wordTemp, 'assects/' . $wordName);
-                    echo "<h4 class='alert alert-primary' role=alert'>Word file Uploaded Successfully!</h4>";
+                    echo "<h4 class='alert alert-primary' role='alert'>Word file Uploaded Successfully!</h4>";
                 } else {
-                    echo "<h4 class='alert alert-danger' role=alert'>Word File Should be 1MB!</h4>";
+                    echo "<h4 class='alert alert-danger' role='alert'>Word File Should be 1MB!</h4>";
                 }
             } else {
-                echo "<h4 class='alert alert-danger' role=alert'>Uploaded file should be (.docx) extension.</h4>";
+                echo "<h4 class='alert alert-danger' role='alert'>Uploaded file should be (.docx) extension.</h4>";
             }
         }
         //code for excel file
@@ -84,12 +84,12 @@
             if ($excelType == 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
                 if ($excelSize <= 1000000) {
                     move_uploaded_file($excelTemp, 'assects/' . $excelName);
-                    echo "<h4 class='alert alert-primary' role=alert'>Excel Uploaded Successfully!</h4>";
+                    echo "<h4 class='alert alert-primary' role='alert'>Excel Uploaded Successfully!</h4>";
                 } else {
-                    echo "<h4 class='alert alert-danger' role=alert'>Excel Should be 1MB!</h4>";
+                    echo "<h4 class='alert alert-danger' role='alert'>Excel Should be 1MB!</h4>";
                 }
             } else {
-                echo "<h4 class='alert alert-danger' role=alert'>Uploaded file should be (.xlxs) extension.</h4>";
+                echo "<h4 class='alert alert-danger' role='alert'>Uploaded file should be (.xlxs) extension.</h4>";
             }
         }
     ?>
