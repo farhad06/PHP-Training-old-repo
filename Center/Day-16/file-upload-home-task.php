@@ -23,6 +23,14 @@
                 <input type="file" name="pdf" class="form-control">
             </div>
             <div class="form-group">
+                <label for="">WORD</label>
+                <input type="file" name="word" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">EXCEL</label>
+                <input type="file" name="excel" class="form-control">
+            </div>
+            <div class="form-group">
                 <button name='submit' class="btn btn-info">Submit</button>
             </div>
         </form>

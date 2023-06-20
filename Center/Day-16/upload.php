@@ -54,6 +54,44 @@
                 echo "<h4 class='alert alert-danger' role=alert'>Uploaded file should be (.pdf) extension.</h4>";
             }
         }
+        //code fro upload word file
+        $wordName = $_FILES['word']['name'];
+        $wordType = $_FILES['word']['type'];
+        $wordTemp = $_FILES['word']['tmp_name'];
+        $wordSize = $_FILES['word']['size'];
+        if ($wordName == '') {
+            echo " ";
+        } else {
+            if ($wordType == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+                if ($wordSize <= 1000000) {
+                    move_uploaded_file($wordTemp, 'assects/' . $wordName);
+                    echo "<h4 class='alert alert-primary' role=alert'>Word file Uploaded Successfully!</h4>";
+                } else {
+                    echo "<h4 class='alert alert-danger' role=alert'>Word File Should be 1MB!</h4>";
+                }
+            } else {
+                echo "<h4 class='alert alert-danger' role=alert'>Uploaded file should be (.docx) extension.</h4>";
+            }
+        }
+        //code for excel file
+        $excelName = $_FILES['excel']['name'];
+        $excelType = $_FILES['excel']['type'];
+        $excelTemp = $_FILES['excel']['tmp_name'];
+        $excelSize = $_FILES['excel']['size'];
+        if ($excelName == '') {
+            echo " ";
+        } else {
+            if ($excelType == 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+                if ($excelSize <= 1000000) {
+                    move_uploaded_file($excelTemp, 'assects/' . $excelName);
+                    echo "<h4 class='alert alert-primary' role=alert'>Excel Uploaded Successfully!</h4>";
+                } else {
+                    echo "<h4 class='alert alert-danger' role=alert'>Excel Should be 1MB!</h4>";
+                }
+            } else {
+                echo "<h4 class='alert alert-danger' role=alert'>Uploaded file should be (.xlxs) extension.</h4>";
+            }
+        }
     ?>
         <div class="row">
             <div class="col-md-12">
