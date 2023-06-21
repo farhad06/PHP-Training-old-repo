@@ -11,8 +11,8 @@
 <body>
     <div class="container" style='margin-top:15px'>
         <?php
-        print("<pre>");
-        print_r($_FILES);
+        // print("<pre>");
+        // print_r($_FILES);
         $imageName = $_FILES['image']['name'];
         $imageType = $_FILES['image']['type'];
         $imageTemp = $_FILES['image']['tmp_name'];
