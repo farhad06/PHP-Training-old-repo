@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
                 <label for="">PDF</label>
-                <input type="file" name="pdf" class="form-control">
+                <input type="file" name="pdf" class="form-control" accept="application/pdf">
             </div>
             <div class="form-group">
                 <label for="">WORD</label>

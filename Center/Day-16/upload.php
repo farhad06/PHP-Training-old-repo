@@ -11,8 +11,8 @@
 <body>
     <div class="container" style='margin-top:15px'>
         <?php
-        // print("<pre>");
-        // print_r($_FILES);
+        print("<pre>");
+        print_r($_FILES);
         $imageName = $_FILES['image']['name'];
         $imageType = $_FILES['image']['type'];
         $imageTemp = $_FILES['image']['tmp_name'];
@@ -54,6 +54,7 @@
                 echo "<h4 class='alert alert-danger' role='alert'>Uploaded file should be (.pdf) extension.</h4>";
             }
         }
+        echo "<a href='assects/$pdfName'><img src='assects/pdf-image.png'  height='90px' width='120px' style='margin-bottom:12px;'></a>";
         //code fro upload word file
         $wordName = $_FILES['word']['name'];
         $wordType = $_FILES['word']['type'];
@@ -73,6 +74,7 @@
                 echo "<h4 class='alert alert-danger' role='alert'>Uploaded file should be (.docx) extension.</h4>";
             }
         }
+        //echo "<a href='assects/$wordName'><img src='assects/pdf-image.png'  height='90px' width='120px' style='margin-bottom:12px;'></a>";
         //code for excel file
         $excelName = $_FILES['excel']['name'];
         $excelType = $_FILES['excel']['type'];
@@ -99,6 +101,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 
 </html>
