@@ -1,5 +1,9 @@
-<?php session_start(); ?>
-<?php include('header.php'); ?>
+<?php 
+session_start();
+$edulist = implode(',', $_POST['education']);
+$_SESSION['education_list'] = $edulist;
+include('header.php'); 
+?>
 <header class="modal-header">
     <h2>Language Details</h2>
 </header>
@@ -25,8 +29,4 @@
         <a href="education.php" class="btn btn-sm btn-outline-info">Back</a>
     </div>
 </div>
-<?php
-$language = implode(',', $_POST['lang']);
-$_SESSION['language_list'] = $language;
-?>
 <?php include('footer.php'); ?>

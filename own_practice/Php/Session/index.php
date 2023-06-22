@@ -1,5 +1,7 @@
-<?php session_start(); ?>
-<?php include('header.php'); ?>
+<?php 
+session_start(); 
+include('header.php'); 
+?>
 <header class="modal-header">
     <h2>Personal Details</h2>
 </header>
@@ -22,10 +24,4 @@
     </div>
 
 </form>
-<?php
-$_SESSION['name'] = $_POST['name'];
-$_SESSION['phone'] = $_POST['phone'];
-$_SESSION['address'] = $_POST['address'];
-?>
-
 <?php include('footer.php'); ?>
