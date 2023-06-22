@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include('header.php'); ?>
 <header class="modal-header">
     <h2>Show Details</h2>
@@ -11,7 +12,11 @@
         <th>Language Known</th>
     </thead>
     <tbody>
-
+        <td><?php echo $_SESSION['name']; ?></td>
+        <td><?php echo $_SESSION['phone']; ?></td>
+        <td><?php echo $_SESSION['address']; ?></td>
+        <td><?php echo $_SESSION['education_list']; ?></td>
+        <td><?php echo $_SESSION['language_list']; ?></td>
     </tbody>
 
 </table>
@@ -20,4 +25,5 @@
         <a href="language.php" class="btn btn-sm btn-outline-info">Back</a>
     </div>
 </div>
+<?php session_destroy(); ?>
 <?php include('footer.php'); ?>
