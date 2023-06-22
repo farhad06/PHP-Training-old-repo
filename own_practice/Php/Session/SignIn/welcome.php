@@ -22,16 +22,16 @@ if (isset($_SESSION['USER'])) {
 
             }
             count++;
-            console.log(count);
+            //console.log(count);
         }, 1000);
         //if user can press any key from key board count set to zero(0)
         $(this).keypress(function() {
             count = 0;
-        })
+        });
         //if user can move mouse in this page count set to zero(0)
         $(this).mousemove(function() {
             count = 0;
-        })
+        });
     });
 </script>
 
