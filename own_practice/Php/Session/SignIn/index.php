@@ -19,15 +19,20 @@ include('../header.php');
     </div>
 </form>
 <?php
-if(isset($_GET['error'])){
+if (isset($_GET['error'])) {
     echo "<div class='alert alert-danger'>Invaid Name or Password!</div>";
 }
 if (isset($_GET['logout'])) {
-    echo "<div class='alert alert-success'>You Successfully logged out.</div>";
+    echo "<div class='alert alert-success' id='logoutMsg'>You Successfully logged out.</div>";
 }
 if (isset($_GET['auth'])) {
     echo "<div class='alert alert-warning'>Unothorized access!</div>";
 }
 
 ?>
+<script>
+    $(document).ready(function() {
+        $('#logoutMsg').fadeOut(10000);
+    });
+</script>
 <?php include('../footer.php'); ?>
