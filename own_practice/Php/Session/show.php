@@ -1,8 +1,8 @@
-<?php 
+<?php
 session_start();
 $language = implode(',', $_POST['lang']);
 $_SESSION['language_list'] = $language;
-include('header.php'); 
+include('header.php');
 ?>
 <header class="modal-header">
     <h2>Show Details</h2>
@@ -26,7 +26,7 @@ include('header.php');
 </table>
 <div class="row">
     <div class="col-md-12">
-        <a href="language.php" class="btn btn-sm btn-outline-info">Back</a>
+        <a href="language.php" class="btn btn-sm btn-outline-info">&laquo;Previous</a>
     </div>
 </div>
 <?php session_destroy(); ?>

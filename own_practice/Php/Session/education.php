@@ -1,9 +1,9 @@
-<?php 
+<?php
 session_start();
 $_SESSION['name'] = $_POST['name'];
 $_SESSION['phone'] = $_POST['phone'];
 $_SESSION['address'] = $_POST['address'];
-include('header.php'); 
+include('header.php');
 ?>
 <header class="modal-header">
     <h2>Education Details</h2>
@@ -27,7 +27,7 @@ include('header.php');
 </form>
 <div class="row">
     <div class="col-md-12">
-        <a href="index.php" class="btn btn-sm btn-outline-info">Back</a>
+        <a href="index.php" class="btn btn-sm btn-outline-info">&laquo;Previous</a>
     </div>
 </div>
 <?php include('footer.php'); ?>
