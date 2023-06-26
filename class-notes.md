@@ -26,6 +26,10 @@ https://github.com/Devinterview-io/php-interview-questions
 #### Laravel Interview Questions.
 https://github.com/fgitpush/Top-Laravel-Interview-Questions-Wiki
 
-
+#### Bootstrap Design
+https://mdbootstrap.com/docs/standard/forms/input-fields/
+https://pro.propeller.in/components/text-fields
+#### Laravel Video
+https://www.learnvern.com/laravel-tutorial/introduction-to-laravel?show_calendar_popup=1
 
 
