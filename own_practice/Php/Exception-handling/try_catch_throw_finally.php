@@ -1,7 +1,7 @@
 <?php
 try {
     $a = 10;
-    $b = 0;
+    $b = 2;
 
     if ($b==0){
         throw new Exception("Division By Zero.");
@@ -11,5 +11,7 @@ try {
     }
 } catch (Exception $ex) {
     echo "An exception occured " . $ex->getMessage();
+}finally{
+    echo "<br> This line is always executed.";
 }
 ?>
