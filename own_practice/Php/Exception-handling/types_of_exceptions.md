@@ -14,3 +14,6 @@
 
 8. `HTTPException`: This class represents exceptions related to HTTP requests and responses. It includes exceptions like `HttpException` and `HttpClientException`.
 
+#### Types of Exceptions in PHP
+ https://www.php.net/manual/en/spl.exceptions.php
+
